@@ -7,6 +7,7 @@ port = os.environ.get("MONGO_PORT")
 
 connect(db=mongo_db_name, host=host, port=int(port))
 
+
 class Visitor(Document):
     visitor_name = StringField(required=True, max_length=20)
     visitor_age = StringField(required=True, max_length=2)

@@ -1,0 +1,7 @@
+build/
+db/
+dist/
+umuzi_prospects_files/__pycache__
+umuzi_prospects_files.egg-info/
+umuzi_prospects_files.egg-info/*
+tests/__pycache__

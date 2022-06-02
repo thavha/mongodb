@@ -1,8 +1,5 @@
 from datetime import datetime
-from mongoengine import Document, StringField, DateTimeField
 from umuzi_prospects_files.umuzi_prospects import Visitor
-
-
 
 
 def create_visitor(
@@ -31,7 +28,7 @@ def list_visitors():
     visitors = Visitor.objects()
     for visitor in visitors:
         list_visitor.append(f'name:{visitor["visitor_name"]}, id:{visitor["id"]}')
-    
+
     return list_visitor
 
 
@@ -85,11 +82,11 @@ def delete_all():
     return f"deleted all visitors"
 
 
-#print(create_visitor("visitor_thavha_mongo", "23", "name_of_the_assistor", "comments"))
+# print(create_visitor("visitor_thavha_mongo", "23", "name_of_the_assistor", "comments"))
 # print(update_visitor("62925c6d3f627854d48c34a3","anza tsiwana"))
 # update_visitor("62924ecc8589cb86fbc3ee58", "thavha","27","anza","ahuan servise")
-#delete_visitor('62925c6d3f627854d48c34a9')
+# delete_visitor('62925c6d3f627854d48c34a9')
 # print(list_visitors())
-#print(visitor_details("62925de33d0a1bc949e8a4d6"))
+# print(visitor_details("62925de33d0a1bc949e8a4d6"))
 # print(delete_all())
-#print(list_visitors())
+# print(list_visitors())

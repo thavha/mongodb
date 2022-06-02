@@ -1,9 +1,0 @@
-README.md
-setup.py
-MONGOPROJECT.egg-info/PKG-INFO
-MONGOPROJECT.egg-info/SOURCES.txt
-MONGOPROJECT.egg-info/dependency_links.txt
-MONGOPROJECT.egg-info/top_level.txt
-umuzi_prospects_files/__init__.py
-umuzi_prospects_files/umuzi_prospects.py
-umuzi_prospects_files/visitor.py

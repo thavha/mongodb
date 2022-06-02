@@ -7,18 +7,13 @@ from umuzi_prospects_files.visitor import (
     update_visitor,
     delete_all,
 )
-from datetime import datetime
-from mongoengine import connect, disconnect, Document, StringField, DateTimeField
-from unittest.main import main
+from mongoengine import connect, disconnect
 from bson import ObjectId
-
-
 from umuzi_prospects_files.umuzi_prospects import Visitor
 
 disconnect()
 
 connect("mongoenginetest", host="mongomock://localhost", port=8081)
-
 
 class TestVisitor(unittest.TestCase):
     def test_creating_visitor(self):
